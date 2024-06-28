@@ -28,13 +28,13 @@ function updateDisplay() {
     timerDisplay.textContent = 'Tijd in leven: ' + timer + ' seconden';
 
     if (status === 'Gelukkig') { // === betekent gelijk (vergelijkt waarde en type)
-        plaatje.src = '/Tamagotchi/Pictures/Panda Gelukkig.png';
+        plaatje.src = 'Pictures/Panda Gelukkig.png';
     } else if (status === 'Normaal') {
-        plaatje.src = '/Tamagotchi/Pictures/Panda Neutraal.png';
+        plaatje.src = 'Pictures/Panda Neutraal.png';
     } else if (status === 'Verdrietig') {
-        plaatje.src = '/Tamagotchi/Pictures/Panda Verdrietig.png';
+        plaatje.src = 'Pictures/Panda Verdrietig.png';
     } else if (status === 'Dood') {
-        plaatje.src = '/Tamagotchi/Pictures/Panda Dood.png';
+        plaatje.src = 'Pictures/Panda Dood.png';
     }
 }
 
@@ -114,7 +114,7 @@ slaapBtn.addEventListener('click', function() {
 setInterval(decreaseStats, 1000); //interval om stats te verminderen om de 1000ms
 
 function playDefeatSound() {
-    let defeatsound = new Audio("/Tamagotchi/Audio/mixkit-player-losing-or-failing-2042.wav");
+    let defeatsound = new Audio("Audio/mixkit-player-losing-or-failing-2042.wav");
     defeatsound.play();
 }
 
